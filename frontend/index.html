@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🎨 NFT Marketplace</h1>
+            <div class="wallet-section">
+                <button id="connectWallet">Connect Wallet</button>
+                <div id="walletInfo" style="display: none;">
+                    <span id="walletAddress"></span>
+                    <span id="walletBalance"></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="actions">
+                <div class="action-card">
+                    <h3>🎯 Mint NFT</h3>
+                    <button id="mintNFT">Mint New NFT</button>
+                </div>
+
+                <div class="action-card">
+                    <h3>📝 List NFT</h3>
+                    <input type="number" id="tokenId" placeholder="Token ID" min="1">
+                    <input type="number" id="price" placeholder="Price in ETH" step="0.001" min="0.001">
+                    <button id="listNFT">List NFT</button>
+                </div>
+            </section>
+
+            <section class="listings">
+                <h2>🏪 Active Listings</h2>
+                <div id="listingsContainer">
+                    <p>Loading listings...</p>
+                </div>
+            </section>
+        </main>
+
+        <div id="status" class="status-message"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html> 
