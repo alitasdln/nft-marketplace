@@ -117,7 +117,7 @@ nft-marketplace/
 ### Contract Size
 - Marketplace.sol: ~95 lines of code
 - SimpleNFT.sol: ~25 lines of code
-- Total: **≤150 LOC** ✅
+- Total: ≤150 LOC
 
 ## Development Notes
 
